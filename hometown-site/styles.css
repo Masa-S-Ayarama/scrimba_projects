@@ -1,0 +1,45 @@
+/* Main Style */
+
+@font-face {
+  font-family: Pattaya;
+  src: url(pattaya.regular.ttf);
+}
+
+body {
+  width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  background: lightskyblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: hwb(201 6% 63%);
+
+}
+
+.header {
+  height: 640px;
+  background-image: url("images/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aqua;
+  font-family: Pattaya;
+  font-size:large ;
+  text-shadow: 0 0 50px goldenrod;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header-text {
+
+}
+
+.destinations-sect {
+  
+}
+
+.dest-img {
+  
+}
