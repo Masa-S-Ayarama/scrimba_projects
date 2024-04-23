@@ -23,6 +23,7 @@ body {
   padding: 0px;
   margin: 20px auto;
   /*background-image: linear-gradient(45deg, red, white, blue, blue, blue, white, red); */
+  background-image: linear-gradient(135deg, teal, pink);
   background-color: rgb(15, 48, 85);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: teal;
@@ -96,15 +97,32 @@ body {
   align-items: center;
   border: 8px rgba(79, 69, 59, 0.4);
   border-radius: 30px;
+  
 }
 
-.guide-img {
+.image-circle {                                     /* create outer circle at the outer-div of image container-div */
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  border-top: 5px dashed #ffcc00;
+  border-right: 5px dashed #e49030;
+  border-bottom: 5px dashed #295778;
+  border-left: 5px dashed #000000;
+  padding: 10px;
+  animation: spin 10s infinite linear;              /* to spin outer circle of the image */ 
+}
+
+.image-circle img {
   width: 120px;
   height: 120px;
-  border: 5px solid rgb(228, 144, 48);
+  /*border: 5px dashed rgb(228, 144, 48); */
   border-radius: 50%;
-  border-style: dashed;
-  padding: 20px;
+  padding: 6px;
+  animation: spin 10s infinite reverse linear;     /* for the image not spin itself */
+}
+
+@keyframes spin {
+  100% { transform: rotate(1turn); }                /* set keyframes for animation */
 }
 
 .yourguide {
