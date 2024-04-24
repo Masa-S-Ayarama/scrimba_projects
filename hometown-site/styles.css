@@ -19,24 +19,29 @@ a {
 }
 
 body {
-  width: 800px;
-  margin: 50px auto;
+  width: 850px;
+  margin: 30px auto 50px auto;
   /*background-image: linear-gradient(45deg, red, white, blue, blue, blue, white, red);  --Thailand Flag */
   background-image: linear-gradient(135deg, teal, pink);
   background-color: rgb(18, 62, 112);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: teal;
   text-align: center;
-  border: 10px solid gray;
-  border-radius: 15px;
 }
 
+.container {
+  width: 800px;
+  margin: 15px auto;
+  border: 10px solid gray;
+  border-radius: 15px;
+  box-shadow: -10px 15px 5px rgba(0, 0, 0, 0.5);
+}
 
 .header {
   max-width: 100%;
   height: 445px;
   background-image: url("images/main.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   font-family: Pacifico;
   font-size: larger;
@@ -97,9 +102,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: 8px rgba(79, 69, 59, 0.4);
   border-radius: 20px;
-  
 }
 
 .image-circle {                                     /* create outer circle at the outer-div of image container-div */
